@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import pylast
-
+import sys
 from subprocess import Popen
 
 API_KEY = "40887e583290b0d8932e3c872ac7aae5"
 API_SECRET = "6605f506e40adf0ad7eb29da94fafa42"
 
-username = "Vintendo"
-password_hash = "c9c952008479e67d04709809ac61fc57"
+username = sys.argv[1]
+password_hash = pylast.md5(sys.argv[2])
 
 def getTrack():
     network = pylast.LastFMNetwork(api_key = API_KEY, api_secret = API_SECRET,
