@@ -7,3 +7,8 @@ Dependency's
 ------------
 * [Zenity](http://live.gnome.org/Zenity)
 * [pylast](http://code.google.com/p/pylast/)
+
+Usage
+-----
+
+lastfm.py <username> <password>
