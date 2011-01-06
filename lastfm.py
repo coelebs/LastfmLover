@@ -29,5 +29,5 @@ if __name__ == '__main__':
 
     proc = Popen("zenity --question --text='%s'" % question, shell=True)
     proc.communicate()
-    if proc.returncode:
+    if proc.returncode is 0:
         track.love()
