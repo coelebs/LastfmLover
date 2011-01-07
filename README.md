@@ -10,5 +10,9 @@ Dependency's
 
 Usage
 -----
-
 lastfm.py <username> <password>
+
+Usage
+-----
+* Shift username and password to configuration file
+* Look into the new OAuth lastfm
