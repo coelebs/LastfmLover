@@ -15,7 +15,6 @@ def getTrack():
 
     user = network.get_authenticated_user()
     track = user.get_now_playing()
-    print track
 
     if not track:
         track = user.get_recent_tracks(limit = 1)[0].track
@@ -25,7 +24,6 @@ def getTrack():
 
 if __name__ == '__main__':
     track = getTrack()
-    print track
     
     question = "Do you want to love %s?" % str(track)
 
